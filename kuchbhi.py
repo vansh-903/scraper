@@ -48,7 +48,7 @@ def scrape_instagram(driver, url):
 
 def scrape_youtube_video(url):
     video_id = url.split("v=")[-1].split("&")[0]
-    api_key = "AIzaSyA4zibC7A0a3ctk6NECEsF2kEhsVxHYTwI"
+    api_key = "AIzaSyA4zi6NECEsF2kEhsVxHYTwI"
     api_url = f"https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id={video_id}&key={api_key}"
     response = requests.get(api_url).json()
     
